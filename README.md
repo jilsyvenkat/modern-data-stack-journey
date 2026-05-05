@@ -17,7 +17,7 @@ journey into the modern data stack.
 | Day | Topic | Notes | Code | Status |
 |-----|-------|-------|------|--------|
 | 1 | dbt fundamentals | [Notes](days/week1/day01-dbt-fundamentals.md) | [Code](code/dbt/) | ✅ Done |
-| 2 | Snowflake advanced features | Coming soon | Coming soon | 🔄 In progress |
+| 2 | Snowflake advanced features | [Notes](days/week1/day02-snowflake-advanced.md) | [Code](code/snowflake/) | ✅ Done |
 | 3 | Apache Kafka & streaming | - | - | ⏳ Pending |
 | 4 | Apache Airflow & orchestration | - | - | ⏳ Pending |
 | 5 | Delta Lake / Apache Iceberg | - | - | ⏳ Pending |

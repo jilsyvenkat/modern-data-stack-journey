@@ -1,3 +1,13 @@
+"What is the difference between Time Travel and Fail-safe?" — 
+Time Travel is user-controlled up to 90 days. 
+Fail-safe is Snowflake-controlled for 7 days after that, only recoverable by Snowflake support.
+"When would you use Zero-Copy Cloning over a traditional copy?" — 
+Any time you need an instant dev, UAT, or sandbox environment. 
+No storage cost until data diverges, takes seconds instead of hours.
+"What are Dynamic Tables and when would you use them over Airflow?" — 
+For warehouse-native transformations needing automatic freshness. 
+Airflow is still better for cross-system orchestration involving multiple tools.
+
 -- try SENTIMENT first
 SELECT SNOWFLAKE.CORTEX.SENTIMENT('This product is absolutely amazing!');
 --AI function SENTIMENT is not available for trial accounts.

@@ -84,9 +84,13 @@ Total DAG duration:                             00:00:07.838
 | Error | Cause | Fix |
 |---|---|---|
 | Ports not available: 5432 | Windows blocking PostgreSQL port | Used astro dev start --postgres-port 5433 |
-| DAG Import Error: unexpected keyword argument 'schedule_interval' | Airflow 3.x renamed schedule_interval to schedule | Changed schedule_interval= to schedule= in DAG definition |
-| ModuleNotFoundError: No module named airflow | Ran python dags/daily_pipeline.py outside Docker | Airflow runs inside Docker container — syntax check not needed locally |
-| Database migration required | Airflow 3.x requires db migrate on first start | Ran airflow db migrate inside astro dev bash container |
+| DAG Import Error: unexpected keyword argument 'schedule_interval' | Airflow 3.x renamed schedule_interval to schedule | Changed schedule_interval= to schedule= |
+| DAG not appearing after 5 minutes | Database migration needed | Ran airflow db migrate inside astro dev bash |
+| cannot import name 'SnowflakeOperator' | Class renamed in newer Snowflake provider | Changed to SnowflakeSqlApiOperator as SnowflakeOperator |
+| Invalid arguments: provide_context=True | Removed in Airflow 3.x — context auto injected | Removed provide_context=True from PythonOperator |
+| airflow.operators.python deprecated | Moved to providers package in Airflow 3.x | Use airflow.providers.standard.operators.python |
+| AttributeError: NoneType has no attribute public_key | SnowflakeSqlApiOperator requires JWT key pair not password | Switched to SQLExecuteQueryOperator which uses username/password |
+| Connection test disabled | Astronomer disables it by default | Added AIRFLOW__CORE__TEST_CONNECTION=Enabled to .env file |
 
 ## Key Airflow 3.x breaking change
 Airflow 3.0 renamed `schedule_interval` to `schedule` — a breaking
@@ -183,6 +187,48 @@ for audit — directly supporting GDPR compliance requirements.
 The >> operator replaces the informal "run this after that"
 assumptions with explicit, version-controlled dependencies that
 are visible to the whole team in one UI.
+
+## Airflow 3.x breaking changes — learned the hard way
+
+This was the most valuable part of Day 4. Running on Astronomer with
+Airflow 3.x exposed four breaking changes from Airflow 2.x that trip
+up experienced users:
+
+| Airflow 2.x | Airflow 3.x | Impact |
+|-------------|-------------|--------|
+| schedule_interval= | schedule= | DAG import error |
+| SnowflakeOperator | SnowflakeSqlApiOperator | Import error |
+| provide_context=True | Removed — auto injected | TypeError on PythonOperator |
+| airflow.operators.python | airflow.providers.standard.operators.python | Deprecation warning |
+| SnowflakeSqlApiOperator (JWT) | SQLExecuteQueryOperator | JWT key pair needed for SQL API |
+
+Key lesson: always check which Airflow version is running before
+copying code from documentation or Stack Overflow. Most online
+examples are still written for Airflow 2.x.
+
+## Real Snowflake connection — what worked
+
+After trying SnowflakeOperator and SnowflakeSqlApiOperator, the
+correct operator for username/password authentication in Airflow 3
+is SQLExecuteQueryOperator from airflow.providers.common.sql:
+
+\```python
+from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
+
+task_check_data = SQLExecuteQueryOperator(
+    task_id='check_snowflake_data',
+    conn_id='snowflake_default',
+    sql="SELECT COUNT(*) FROM dbt_tutorial.jaffle_shop.raw_orders;",
+)
+\```
+
+Connection was configured in Airflow UI under Admin → Connections:
+- Connection Type: Snowflake
+- Account: ll07743.north-europe.azure
+- Login: JILSY711
+- Database: dbt_tutorial
+- Schema: jaffle_shop
+- Warehouse: dbt_tutorial_wh
 
 ## Talking points
 - "Airflow DAGs are Python code in Git — every pipeline change is

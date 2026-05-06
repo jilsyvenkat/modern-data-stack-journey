@@ -19,7 +19,7 @@ journey into the modern data stack.
 | 1 | dbt fundamentals | [Notes](days/week1/day01-dbt-fundamentals.md) | [Code](code/dbt/) | ✅ Done |
 | 2 | Snowflake advanced features | [Notes](days/week1/day02-snowflake-advanced.md) | [Code](code/snowflake/) | ✅ Done |
 | 3 | Apache Kafka & streaming | [Notes](days/week1/day03-kafka-streaming.md) | [Code](code/kafka/) | ✅ Done |
-| 4 | Apache Airflow & orchestration | - | - | ⏳ Pending |
+| 4 | Apache Airflow & orchestration | [Notes](days/week1/day04-airflow-orchestration.md) | [Code](code/airflow/) | ✅ Done |
 | 5 | Delta Lake / Apache Iceberg | - | - | ⏳ Pending |
 | 6 | DataOps & CI/CD for pipelines | - | - | ⏳ Pending |
 | 7 | CV, LinkedIn & profile refresh | - | - | ⏳ Pending |

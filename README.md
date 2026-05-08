@@ -20,7 +20,7 @@ journey into the modern data stack.
 | 2 | Snowflake advanced features | [Notes](days/week1/day02-snowflake-advanced.md) | [Code](code/snowflake/) | ✅ Done |
 | 3 | Apache Kafka & streaming | [Notes](days/week1/day03-kafka-streaming.md) | [Code](code/kafka/) | ✅ Done |
 | 4 | Apache Airflow & orchestration | [Notes](days/week1/day04-airflow-orchestration.md) | [Code](code/airflow/) | ✅ Done |
-| 5 | Delta Lake / Apache Iceberg | - | - | ⏳ Pending |
+| 5 | Delta Lake / Apache Iceberg | [Notes](days/week1/day05-delta-lake-iceberg.md) | [Code](code/iceberg/) | ✅ Done |
 | 6 | DataOps & CI/CD for pipelines | - | - | ⏳ Pending |
 | 7 | CV, LinkedIn & profile refresh | - | - | ⏳ Pending |
 

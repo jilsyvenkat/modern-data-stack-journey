@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: customers
+    description: "One record per customer with their order history"
+    columns:
+      - name: customer_id
+        description: "Primary key — unique identifier for each customer"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: first_name
+        description: "Customer first name"
+        data_tests:
+          - not_null
+
+      - name: last_name
+        description: "Customer last name"
+        data_tests:
+          - not_null
+
+      - name: number_of_orders
+        description: "Total number of orders placed by this customer"
+        data_tests:
+          - not_null

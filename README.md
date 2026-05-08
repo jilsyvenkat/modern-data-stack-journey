@@ -21,7 +21,7 @@ journey into the modern data stack.
 | 3 | Apache Kafka & streaming | [Notes](days/week1/day03-kafka-streaming.md) | [Code](code/kafka/) | ✅ Done |
 | 4 | Apache Airflow & orchestration | [Notes](days/week1/day04-airflow-orchestration.md) | [Code](code/airflow/) | ✅ Done |
 | 5 | Delta Lake / Apache Iceberg | [Notes](days/week1/day05-delta-lake-iceberg.md) | [Code](code/iceberg/) | ✅ Done |
-| 6 | DataOps & CI/CD for pipelines | - | - | ⏳ Pending |
+| 6 | DataOps & CI/CD for pipelines | [Notes](days/week1/day06-dataops-cicd.md) | [Code](code/dataops/) | ✅ Done |
 | 7 | CV, LinkedIn & profile refresh | - | - | ⏳ Pending |
 
 ### Week 2 — AI & ML infrastructure

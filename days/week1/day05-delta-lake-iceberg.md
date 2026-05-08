@@ -78,10 +78,14 @@ essentially Iceberg snapshot management under the hood.
 
 ## Errors I hit and how I fixed them
 
+## Errors I hit and how I fixed them
+
 | Error | Cause | Fix |
 |---|---|---|
-| Add yours here | | |
-
+| DBFS_DISABLED — Public DBFS root is disabled | Databricks Community Edition disables DBFS root for security | Used Unity Catalog managed tables with saveAsTable() instead of save() to DBFS path |
+| NO_SUCH_CATALOG_EXCEPTION — Catalog 'main' not found | Community Edition uses different catalog names than docs show | Ran SHOW CATALOGS to find available catalogs — used 'workspace' instead of 'main' |
+| Row order different from expected | Spark distributed processing does not guarantee row order | Normal behaviour — add ORDER BY when order matters |
+| Auto OPTIMIZE appeared in transaction log | Databricks automatically optimises Delta tables in background | Expected production behaviour — Auto Optimize compacts small files automatically |
 ## Open table format comparison
 
 | Feature | Delta Lake | Apache Iceberg | Apache Hudi |

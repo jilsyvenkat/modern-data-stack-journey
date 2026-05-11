@@ -4,9 +4,10 @@ Senior Data & AI Lead with 20 years experience across Banking, Finance,
 Insurance and Healthcare — documenting a hands-on 21-day upskilling
 journey into the modern data stack.
 
-**Role:** Associate Director, Data Management — Optum Ireland & UK  
-**Goal:** Transition into Head of Data /Data Leader/Data Architect roles at Dublin MNCs  
-**Timeline:** 21 days, ~90 minutes per day
+**Role:** Associate Director, Data Management — Optum Ireland & UK
+**Goal:** Transition into Principal Data Engineer / Head of Data /
+Data Architect roles at Dublin MNCs
+**Timeline:** 21 days, approximately 90 minutes per day
 
 ---
 
@@ -22,41 +23,40 @@ journey into the modern data stack.
 | 4 | Apache Airflow & orchestration | [Notes](days/week1/day04-airflow-orchestration.md) | [Code](code/airflow/) | ✅ Done |
 | 5 | Delta Lake / Apache Iceberg | [Notes](days/week1/day05-delta-lake-iceberg.md) | [Code](code/iceberg/) | ✅ Done |
 | 6 | DataOps & CI/CD for pipelines | [Notes](days/week1/day06-dataops-cicd.md) | [Code](code/dataops/) | ✅ Done |
-| 7 | CV, LinkedIn & profile refresh | - | - | ⏳ Pending |
+| 7 | CV, LinkedIn & profile refresh | [Notes](days/week1/day07-cv-linkedin-profile.md) | — | ✅ Done |
 
 ### Week 2 — AI & ML infrastructure
 
-| Day | Topic | Status |
-|-----|-------|--------|
-| 8 | LLM APIs & prompt engineering | [Notes](days/week2/day08-llm-apis-prompt-engineering.md) | [Code](code/llm/) | ✅ Done || 8 | LLM APIs & prompt engineering | ⏳ Pending |
-| 9 | RAG (Retrieval-Augmented Generation) | ⏳ Pending |
-| 10 | Vector databases & embeddings | ⏳ Pending |
-| 11 | MLOps & data pipelines for ML | ⏳ Pending |
-| 12 | Snowflake Cortex & BigQuery ML | ⏳ Pending |
-| 13 | Agentic AI & MCP protocol | ⏳ Pending |
-| 14 | Mock interviews & storytelling | ⏳ Pending |
+| Day | Topic | Notes | Code | Status |
+|-----|-------|-------|------|--------|
+| 8 | LLM APIs & prompt engineering | [Notes](days/week2/day08-llm-apis-prompt-engineering.md) | [Code](code/llm/) | ✅ Done |
+| 9 | RAG (Retrieval-Augmented Generation) | — | — | ⏳ Pending |
+| 10 | Vector databases & embeddings | — | — | ⏳ Pending |
+| 11 | MLOps & data pipelines for ML | — | — | ⏳ Pending |
+| 12 | Snowflake Cortex & BigQuery ML | — | — | ⏳ Pending |
+| 13 | Agentic AI & MCP protocol | — | — | ⏳ Pending |
+| 14 | Mock interviews & storytelling | — | — | ⏳ Pending |
 
 ### Week 3 — Governance, leadership & launch
 
-| Day | Topic | Status |
-|-----|-------|--------|
-| 15 | Modern data governance frameworks | ⏳ Pending |
-| 16 | Data catalogues & lineage tools | ⏳ Pending |
-| 17 | Data quality & observability | ⏳ Pending |
-| 18 | Cloud cost optimisation | ⏳ Pending |
-| 19 | Portfolio & GitHub presence | ⏳ Pending |
-| 20 | Targeted outreach & networking | ⏳ Pending |
-| 21 | Full mock interview & final review | ⏳ Pending |
+| Day | Topic | Notes | Code | Status |
+|-----|-------|-------|------|--------|
+| 15 | Modern data governance frameworks | — | — | ⏳ Pending |
+| 16 | Data catalogues & lineage tools | — | — | ⏳ Pending |
+| 17 | Data quality & observability | — | — | ⏳ Pending |
+| 18 | Cloud cost optimisation | — | — | ⏳ Pending |
+| 19 | Portfolio & GitHub presence | — | — | ⏳ Pending |
+| 20 | Targeted outreach & networking | — | — | ⏳ Pending |
+| 21 | Full mock interview & final review | — | — | ⏳ Pending |
 
 ---
 
 ## Tech stack covered
 dbt · Snowflake · Apache Kafka · Apache Airflow · Delta Lake ·
-Apache Iceberg · LLM APIs · RAG · Vector Databases · MLOps ·
-Snowflake Cortex · Great Expectations · OpenMetadata
+Apache Iceberg · Ollama · LLM APIs · RAG · Vector Databases ·
+MLOps · Snowflake Cortex · Great Expectations · OpenMetadata
 
 ## Background
 20 years across Optum, TCS, Cisco, Accenture ·
 Domains: Banking, Finance, Insurance, Healthcare ·
-GCP Certified · Scrum Master · Python · SQL · Snowflake · BigQuery# modern-data-stack-journey
-AI-900 Certified
+GCP Certified · Scrum Master · Python · SQL · Snowflake · BigQuery

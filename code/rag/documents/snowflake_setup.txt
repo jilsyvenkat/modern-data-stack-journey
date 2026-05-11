@@ -1,0 +1,29 @@
+SNOWFLAKE ENVIRONMENT DOCUMENTATION
+
+Account Details:
+Account identifier: ll07743.north-europe.azure
+Region: North Europe (Azure)
+Edition: Trial (30 days, $400 credit)
+
+Databases:
+dbt_tutorial — primary database for learning exercises
+dbt_tutorial_uat — UAT clone created via Zero-Copy Clone
+
+Schemas:
+dbt_tutorial.jaffle_shop — main schema
+dbt_tutorial.jaffle_shop_dev — dev clone for testing
+
+Warehouses:
+dbt_tutorial_wh — X-Small, auto-suspend 60 seconds, auto-resume
+
+Key Tables:
+raw_customers — 3 rows, seed data from CSV
+raw_orders — 3 rows, seed data from CSV
+customers — mart model built by dbt, 3 rows
+orders_iceberg_demo — Iceberg concepts demo table
+time_travel_test — Time Travel demonstration table
+customer_feedback — Cortex LLM demo table
+
+Data Tools Connected:
+dbt Core 1.11.8 with Snowflake adapter
+Apache Airflow via Astronomer (SQLExecuteQueryOperator)

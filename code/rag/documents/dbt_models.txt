@@ -1,0 +1,24 @@
+DBT MODEL DOCUMENTATION — JAFFLE SHOP PROJECT
+
+customers model:
+The customers model is the primary mart model in our jaffle_shop
+dbt project. It combines raw customer data with order history to
+produce one row per customer. It uses ref('raw_customers') and
+ref('raw_orders') as its sources. Key columns include customer_id
+(primary key), first_name, last_name, number_of_orders, and
+first_order_date. This model is materialized as a table in
+Snowflake database dbt_tutorial, schema jaffle_shop.
+Data tests include unique and not_null on customer_id.
+
+raw_customers source:
+Raw customer data loaded via dbt seed from raw_customers.csv.
+Contains id, first_name, last_name columns.
+Located in dbt_tutorial.jaffle_shop.raw_customers.
+Tests: unique and not_null on id column.
+
+raw_orders source:
+Raw orders data loaded via dbt seed from raw_orders.csv.
+Contains id, user_id, order_date, status columns.
+Status accepted values: completed, returned, pending, failed.
+Located in dbt_tutorial.jaffle_shop.raw_orders.
+Tests: unique, not_null on id, accepted_values on status.

@@ -1,0 +1,30 @@
+DATA GOVERNANCE POLICY — OPTUM IRELAND & UK
+
+GDPR Compliance:
+All personal data processed by the data platform must comply with
+GDPR Article 5 principles — lawfulness, fairness, transparency,
+purpose limitation, data minimisation, accuracy, storage limitation,
+integrity and confidentiality. Data subject access requests must
+be fulfilled within 30 days. Right to erasure requests must be
+processed within 30 days and verified using Snowflake Time Travel
+to confirm data removal across all versions.
+
+HIPAA Compliance:
+Protected Health Information (PHI) must never be sent to external
+APIs or cloud services without a Business Associate Agreement (BAA).
+All LLM processing of patient data must use self-hosted models
+(Ollama) running within the corporate boundary. PHI must be
+encrypted at rest and in transit. Access logs must be maintained
+for 6 years.
+
+Data Retention:
+Customer data retained for 7 years after last interaction.
+Transaction data retained for 10 years for regulatory compliance.
+Snowflake Time Travel retention set to 90 days on all PHI tables.
+Snowflake Fail-safe provides additional 7 days recovery window.
+
+Data Classification:
+Level 1 — Public: Marketing materials, product descriptions
+Level 2 — Internal: Business metrics, aggregated reports
+Level 3 — Confidential: Customer PII, financial records
+Level 4 — Restricted: PHI, payment card data

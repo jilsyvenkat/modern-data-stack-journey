@@ -30,7 +30,7 @@ Data Architect roles at Dublin MNCs
 | Day | Topic | Notes | Code | Status |
 |-----|-------|-------|------|--------|
 | 8 | LLM APIs & prompt engineering | [Notes](days/week2/day08-llm-apis-prompt-engineering.md) | [Code](code/llm/) | ✅ Done |
-| 9 | RAG (Retrieval-Augmented Generation) | — | — | ⏳ Pending |
+| 9 | RAG (Retrieval-Augmented Generation) | [Notes](days/week2/day09-rag.md) | [Code](code/rag/) | ✅ Done |
 | 10 | Vector databases & embeddings | — | — | ⏳ Pending |
 | 11 | MLOps & data pipelines for ML | — | — | ⏳ Pending |
 | 12 | Snowflake Cortex & BigQuery ML | — | — | ⏳ Pending |

@@ -28,7 +28,7 @@ journey into the modern data stack.
 
 | Day | Topic | Status |
 |-----|-------|--------|
-| 8 | LLM APIs & prompt engineering | ⏳ Pending |
+| 8 | LLM APIs & prompt engineering | [Notes](days/week2/day08-llm-apis-prompt-engineering.md) | [Code](code/llm/) | ✅ Done || 8 | LLM APIs & prompt engineering | ⏳ Pending |
 | 9 | RAG (Retrieval-Augmented Generation) | ⏳ Pending |
 | 10 | Vector databases & embeddings | ⏳ Pending |
 | 11 | MLOps & data pipelines for ML | ⏳ Pending |

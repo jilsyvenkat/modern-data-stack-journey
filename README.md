@@ -33,7 +33,7 @@ Data Architect roles at Dublin MNCs
 | 9 | RAG (Retrieval-Augmented Generation) | [Notes](days/week2/day09-rag.md) | [Code](code/rag/) | ✅ Done |
 | 10 | Vector databases & embeddings | [Notes](days/week2/day10-vector-databases-embeddings.md) | [Code](code/vectordb/) | ✅ Done |
 | 11 | MLOps & data pipelines for ML | [Notes](days/week2/day11-mlops-data-pipelines.md) | [Code](code/mlops/) | ✅ Done |
-| 12 | Snowflake Cortex & BigQuery ML | — | — | ⏳ Pending |
+| 12 | Snowflake Cortex & BigQuery ML | [Notes](days/week2/day12-snowflake-cortex-bigquery-ml.md) | [Code](code/cortex/) | ✅ Done |
 | 13 | Agentic AI & MCP protocol | — | — | ⏳ Pending |
 | 14 | Mock interviews & storytelling | — | — | ⏳ Pending |
 

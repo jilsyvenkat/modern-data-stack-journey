@@ -1,0 +1,54 @@
+{
+  "feature_group": "customer_behaviour",
+  "version": "1.0",
+  "created_at": "2026-05-12T18:10:46.721724",
+  "feature_count": 11,
+  "entity_count": 3,
+  "features": [
+    {
+      "customer_id": 1,
+      "feature_timestamp": "2026-05-12T18:10:46.720585",
+      "total_orders": 3,
+      "completed_orders": 3,
+      "returned_orders": 0,
+      "failed_orders": 0,
+      "total_spend": 329.97,
+      "avg_order_value": 109.99,
+      "return_rate": 0.0,
+      "days_since_last_order": 43,
+      "days_since_signup": 425,
+      "is_high_value": true,
+      "is_at_risk": false
+    },
+    {
+      "customer_id": 2,
+      "feature_timestamp": "2026-05-12T18:10:46.720653",
+      "total_orders": 2,
+      "completed_orders": 0,
+      "returned_orders": 1,
+      "failed_orders": 1,
+      "total_spend": 0,
+      "avg_order_value": 0,
+      "return_rate": 0.5,
+      "days_since_last_order": 14,
+      "days_since_signup": 359,
+      "is_high_value": false,
+      "is_at_risk": true
+    },
+    {
+      "customer_id": 3,
+      "feature_timestamp": "2026-05-12T18:10:46.720689",
+      "total_orders": 1,
+      "completed_orders": 1,
+      "returned_orders": 0,
+      "failed_orders": 0,
+      "total_spend": 199.99,
+      "avg_order_value": 199.99,
+      "return_rate": 0.0,
+      "days_since_last_order": 29,
+      "days_since_signup": 279,
+      "is_high_value": false,
+      "is_at_risk": false
+    }
+  ]
+}
